@@ -251,11 +251,15 @@ def brief(conn, topic, now):
     rules = TOPICS[topic]
     lines = [f"# {rules.title}", "", "**Research lead — evidence review required**", "",
              rules.case_to_find, "", "## Deal facts to establish", "",
-             "- Deal date and jurisdiction — city, county, state, and the applicable program or rules.",
-             "- Finding the property — how the investor located and evaluated the opportunity.",
-             "- Financing — purchase price, money down, cash to close, funding source, and later costs.",
-             "- Closing and control — closing date, instrument received, and actual title, possession, or contractual rights.",
-             "- Outcome — what happened after closing, with receipts, reporting, or attributed recollections where available.",
+             "| Field | Source and evidence status | Next record to check |",
+             "|---|---|---|",
+             "| Intended use and exit before commitment | Pending | Dated interview, business plan, lease, or listing. Separate what happened later. |",
+             "| Deal date and jurisdiction | Pending | Property records and program, zoning, or occupancy rules in effect at the time. |",
+             "| Economic feasibility | Pending | Settlement and loan terms, rehab bids or invoices, holding costs, reserves, and local rent or sale comps. For owner use, compare the cost of leasing. |",
+             "| Finding the property | Pending | Original listing, auction notice, or firsthand account. |",
+             "| Financing | Pending | Price, down payment, cash to close, funding source, terms, and later costs. |",
+             "| Closing and control | Pending | Closing date and deed, lien certificate, lease, option, or other instrument establishing rights. |",
+             "| Outcome | Pending | Actual rent, sale proceeds, or operating costs and savings. Mark projections separately. |",
              "", "## What to verify", "", rules.checks, "",
              "Check the rules in effect at the time and label any current guidance separately. "
              "Compare other jurisdictions only with their own authoritative sources.",
@@ -273,7 +277,12 @@ def brief(conn, topic, now):
             lines.append(f"- {source}{date}: {title} — <{url}>")
     lines += ["", "## Editorial gate", "",
               "Attribute investor accounts and distinguish them from transaction records or official rules.",
-              "Mark missing facts as Not disclosed or Not independently verified. Hold the episode if a missing fact is central to the hook.",
+              "For each field, log the source and page or timestamp, evidence status, and next record to check. "
+              "Mark facts as Documented, Investor-reported, Not disclosed, or Not independently verified.",
+              "Itemize cash needed to reach the intended use. Compare the full cost with the expected return and test a downside case. "
+              "Separate projections from realized results and avoid counting financing twice.",
+              "Label the case Feasibility unverified when key costs or the intended-use economics are missing. "
+              "Hold the episode if a gap undermines the hook or would leave viewers with an unsupported takeaway.",
               "Keep the actual deal sequence and jurisdiction. Use original narration, analysis, and visuals. Label any reenactment or pseudonym.",
               "Review each material claim and its source before recording."]
     return "\n".join(lines)

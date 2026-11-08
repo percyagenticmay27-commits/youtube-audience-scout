@@ -45,6 +45,18 @@ class StoryScoutTests(unittest.TestCase):
             self.assertNotIn("Fictional example", brief)
             self.assertIn("due-on-sale", brief.lower())
 
+    def test_brief_puts_intended_use_and_feasibility_before_acquisition(self):
+        with sqlite3.connect(":memory:") as conn:
+            scout.initialize(conn)
+            for topic in scout.TOPICS:
+                with self.subTest(topic=topic):
+                    brief = scout.brief(conn, topic, NOW)
+                    self.assertLess(brief.index("Intended use"), brief.index("Economic feasibility"))
+                    self.assertLess(brief.index("Economic feasibility"), brief.index("Finding the property"))
+                    self.assertIn("Source and evidence status", brief)
+                    self.assertIn("Next record to check", brief)
+                    self.assertIn("Feasibility unverified", brief)
+
     def test_youtube_keeps_query_provenance_and_uses_bounded_searches(self):
         row = {"id": {"videoId": "abcdefghijk"}, "snippet": {"title": "Case study", "publishedAt": "2026-11-04"}}
         with patch.object(scout, "youtube", return_value=[row]) as api:
