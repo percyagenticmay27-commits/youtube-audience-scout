@@ -55,7 +55,10 @@ class StoryScoutTests(unittest.TestCase):
                     self.assertLess(brief.index("Economic feasibility"), brief.index("Finding the property"))
                     self.assertIn("Source and evidence status", brief)
                     self.assertIn("Next record to check", brief)
-                    self.assertIn("Feasibility unverified", brief)
+                    self.assertIn("SKIP if feasibility is unverified", brief)
+                    self.assertIn("Reproduction checklist", brief)
+                    self.assertIn("Verify the jurisdiction in the script", brief)
+                    self.assertIn("Keep the deal on HOLD", brief)
 
     def test_youtube_keeps_query_provenance_and_uses_bounded_searches(self):
         row = {"id": {"videoId": "abcdefghijk"}, "snippet": {"title": "Case study", "publishedAt": "2026-11-04"}}

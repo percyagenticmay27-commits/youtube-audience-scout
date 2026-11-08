@@ -275,14 +275,20 @@ def brief(conn, topic, now):
         for source, title, url, published in rows:
             date = f" ({published[:10]})" if published else ""
             lines.append(f"- {source}{date}: {title} — <{url}>")
-    lines += ["", "## Editorial gate", "",
+    lines += ["", "## Reproduction checklist", "",
+              "Write the steps in plain language. List what to find, cash and documents needed, who does each step, "
+              "what happens at closing, and how the investor reaches the intended outcome.",
+              "Verify the jurisdiction in the script, including the relevant city, county, and state. "
+              "Check both the deal-time rules and current rules for any steps we teach today. "
+              "A story set elsewhere needs a documented local case and a fresh local review.",
+              "", "## Editorial gate", "",
               "Attribute investor accounts and distinguish them from transaction records or official rules.",
               "For each field, log the source and page or timestamp, evidence status, and next record to check. "
               "Mark facts as Documented, Investor-reported, Not disclosed, or Not independently verified.",
               "Itemize cash needed to reach the intended use. Compare the full cost with the expected return and test a downside case. "
               "Separate projections from realized results and avoid counting financing twice.",
-              "Label the case Feasibility unverified when key costs or the intended-use economics are missing. "
-              "Hold the episode if a gap undermines the hook or would leave viewers with an unsupported takeaway.",
+              "SKIP if feasibility is unverified. Keep the deal on HOLD while any material evidence can still be obtained. "
+              "Advance to production only when the full cost, intended outcome, rights acquired, and local steps are supported.",
               "Keep the actual deal sequence and jurisdiction. Use original narration, analysis, and visuals. Label any reenactment or pseudonym.",
               "Review each material claim and its source before recording."]
     return "\n".join(lines)

@@ -65,9 +65,34 @@ it up as documented evidence. Use **not disclosed** for an absent detail and
 **not independently verified** when an attributed claim lacks corroboration.
 Label projections and assumptions separately.
 
-If a missing fact could change the conclusion, mark **feasibility unverified**.
-A case can still explain a documented purchase or cost surprise. Hold it when
-the missing evidence would make the title or takeaway misleading.
+### Production gate
+
+- **Ready.** The viewer can follow the actual deal from the initial goal through
+  discovery, funding, closing, control, and the end result. Explain the required
+  cash, counterparties, documents, timeline, full costs, and the decision points.
+  Separate reported results from forecasts and disclose any immaterial gaps.
+- **Hold.** A material cost, financing term, legal requirement, or outcome is
+  unresolved and there is a specific record that could resolve it.
+- **Skip.** Feasibility cannot be verified or the local rules for the steps
+  shown cannot be established. Keep the case out of production.
+
+Verify the original location and time. For instructions viewers can use today,
+check the current rules and program terms in the jurisdiction the story names.
+A story set in another jurisdiction needs a documented local deal and its own
+review. Teach the process and the inputs viewers must recheck for their own
+property.
+
+### Candidate review
+
+- **Hold — Madison, Alabama, partnership-funded flip.** Jordan Fulmer reports
+  finding the seller through direct mail, renegotiating after inspection,
+  funding the deal with partners, and completing the resale. His article
+  reports a $155,000 purchase, $70,000 rehab, $370,000 sale, and approximately
+  $120,000 of net project profit. For a production-ready recipe, look for the
+  closing and holding-cost breakdown, how much cash each side needed and
+  when, and supporting closing records. Confirm the applicable permit and
+  jurisdiction requirements. [Investor account](https://newsilver.com/the-lender/house-flipping-before-and-after-madison-al/)
+  · [City of Madison permitting](https://madisonal.gov/640/Permitting)
 
 The intake stores metadata and references. It does not collect article bodies,
 YouTube transcripts, or media. YouTube sources are research leads, and their
