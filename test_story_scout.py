@@ -37,7 +37,12 @@ class StoryScoutTests(unittest.TestCase):
             brief = scout.brief(conn, "subject-to", NOW + timedelta(days=28))
             self.assertIn("https://example.com/x", brief)
             self.assertNotIn("watch?v=abc", brief)
-            self.assertIn("Fictional example", brief)
+            self.assertIn("Research lead — evidence review required", brief)
+            self.assertIn("Deal date and jurisdiction", brief)
+            self.assertIn("Finding the property", brief)
+            self.assertIn("Closing and control", brief)
+            self.assertIn("Not disclosed", brief)
+            self.assertNotIn("Fictional example", brief)
             self.assertIn("due-on-sale", brief.lower())
 
     def test_youtube_keeps_query_provenance_and_uses_bounded_searches(self):

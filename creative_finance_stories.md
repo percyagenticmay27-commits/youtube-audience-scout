@@ -1,8 +1,8 @@
 # Creative Finance Stories
 
-Faceless episodes for small residential real estate investors. Each episode puts
-a fictional buyer or seller at a decision point, shows the numbers and tradeoffs,
-and gives the viewer one claim they can verify.
+Faceless episodes for small residential real estate investors. Each episode
+follows a documented transaction and shows what the investor found, how they
+funded it, what happened at closing, and what they actually controlled.
 
 ## Run the source intake
 
@@ -33,16 +33,21 @@ searches. The remaining three have RSS and curated references.
 
 ## Turn a lead into an episode
 
-1. Open the linked sources and verify any claim about taxes, law, or financing
-   against the current rule for the stated jurisdiction.
-2. For an original fictional case, build the characters, deal numbers, sequence
-   of decisions, analysis, and ending independently. Label it fictional in the
-   narration and on screen. If telling a real case, verify the facts, attribute
-   sources, and clear rights for any protected material you plan to reuse.
-3. Add a cash-to-close table or timeline, a downside scenario, and a decision.
-   For a distressed seller, show the seller's alternatives and consequences.
-4. Produce original or appropriately licensed diagrams, narration, and visuals.
-   Review source links, disclosure, and the final script before publishing.
+1. Choose a real deal from an investor interview, a firsthand article, or
+   documentary reporting. Record the deal date, place, and source separately
+   from the publication date.
+2. Trace the opportunity, financing, closing, control, and outcome. Attribute
+   firsthand accounts and distinguish them from independently verified
+   records. Mark unavailable details as undisclosed or unverified. Hold the
+   story if a missing detail is central to the title or takeaway.
+3. Verify material legal, tax, and financing claims for the original
+   jurisdiction and time. Present current rules or a different jurisdiction
+   in a separate, sourced comparison.
+4. Write original narration and analysis using the established facts. Keep
+   figures and events intact. Label any reenactment or pseudonym and clear
+   rights for any protected material you reuse.
+5. Review the title against the evidence. Keep price, down payment, total
+   cash to close, repair costs, and post-closing rights separate.
 
 The intake stores metadata and references. It does not collect article bodies,
 YouTube transcripts, or media. YouTube sources are research leads, and their

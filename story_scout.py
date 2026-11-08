@@ -38,7 +38,7 @@ AREC = "https://arec.alabama.gov/docs/forms/edu/Case%202.pdf"
 class Topic:
     title: str
     pattern: str
-    premise: str
+    case_to_find: str
     checks: str
     references: tuple[str, ...]
 
@@ -46,43 +46,43 @@ class Topic:
 TOPICS = {
     "subject-to": Topic(
         "Subject-to purchases", r"subject[ -]to|\bsub[ -]?2\b",
-        "A seller needs to move before their listing sells. A buyer compares a subject-to offer with a conventional sale and the seller chooses what fits.",
+        "Find an investor's documented purchase where the existing mortgage stayed in place. Look for the seller's reason, actual terms, and who remained liable.",
         "Check the note and due-on-sale clause, lender-consent options, seller liability, insurance, payment servicing, and the buyer's exit.",
         (DUE_ON_SALE,),
     ),
     "1031": Topic(
         "1031 exchanges", r"\b1031\b|like[ -]kind exchange|qualified intermediary",
-        "A landlord sells a small rental and has three possible replacements. One falls through while the exchange clock is running.",
+        "Find a completed or failed rental-property exchange with dated sale and replacement milestones and an explanation of the tax outcome.",
         "Check eligible use, intermediary involvement before closing, identification and completion deadlines, and potential taxable boot.",
         (IRS,),
     ),
     "tax-auction": Topic(
         "Tax lien and tax deed auctions", r"tax[ -]?(?:lien|deed|sale|auction)|delinquent property tax",
-        "A first-time bidder has a $3,000 budget and stops when they learn the county is auctioning a lien on the house.",
+        "Find a completed auction or land-bank transaction. Identify the specific program and the document the buyer actually received.",
         "Verify the jurisdiction, auction type, what the winning bidder receives, redemption, title, and possession before writing claims.",
         (COUNTY, "https://www.revenue.alabama.gov/faqs/what-is-a-lien/"),
     ),
     "low-down": Topic(
         "Low or no money down", r"(?:\bno\b|\blow\b|\bzero\b|\$0)[ -](?:money[ -])?down|seller financ|owner financ|creative financ",
-        "A buyer negotiates a seller-financed purchase and itemizes how much cash is still needed for closing, repairs, and reserves.",
+        "Find a documented low-price or low-down-payment purchase. Distinguish purchase price, cash to close, financing, and later costs.",
         "Verify cash to close, liens, balloon date, payment schedule, financing rules, and the downside case if refinancing fails.",
         ("https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/",),
     ),
     "property-control": Topic(
         "Lease options and property control", r"lease[ -]?(?:option|purchase)|master[ -]lease|rent[ -]to[ -]own",
-        "An owner wants stable rent. A renter-investor compares a master lease with a separate option and faces a repair before the option expires.",
+        "Find a documented master lease or lease-option transaction with the actual possession, subletting, purchase rights, and outcome.",
         "Check the lease, consent to sublet, option dates and price, allocation of repairs, and local rules before describing the structure.",
         ("https://www.legalwiz.com/lease-options-and-alternative-financing/",),
     ),
     "distressed-sellers": Topic(
         "Options for distressed sellers", r"distressed (?:seller|owner|property)|motivated sellers?|foreclos|short sale|loss mitigation",
-        "An owner behind on payments compares a servicer workout, a conventional sale, and an investor's offer using a side-by-side timeline.",
+        "Find a documented distressed-owner transaction with a clear timeline, the owner's options, and the result for the owner and investor.",
         "Show the owner's alternatives and actual deadlines. Verify facts with the servicer or relevant authority and avoid promises of foreclosure relief.",
         (CFPB,),
     ),
     "bird-dogging": Topic(
         "Bird-dogging and deal sourcing", r"bird[ -]?dog|driving for dollars|off[ -]market|wholesal",
-        "A local investor spots an empty house and distinguishes public-record research from activity that may require a license.",
+        "Find a documented lead-sourcing example with enough detail to distinguish public-record research, paid referrals, and licensed activity.",
         "Verify the state's licensing rules, what services are performed, and who can receive compensation before suggesting a referral model.",
         (AREC,),
     ),
@@ -249,24 +249,33 @@ def collect(conn, now, key=None):
 
 def brief(conn, topic, now):
     rules = TOPICS[topic]
-    lines = [f"# {rules.title}", "", "**Fictional example — editorial draft**", "",
-             rules.premise, "", "## What to verify", "", rules.checks, "",
-             "## Verification references", ""]
+    lines = [f"# {rules.title}", "", "**Research lead — evidence review required**", "",
+             rules.case_to_find, "", "## Deal facts to establish", "",
+             "- Deal date and jurisdiction — city, county, state, and the applicable program or rules.",
+             "- Finding the property — how the investor located and evaluated the opportunity.",
+             "- Financing — purchase price, money down, cash to close, funding source, and later costs.",
+             "- Closing and control — closing date, instrument received, and actual title, possession, or contractual rights.",
+             "- Outcome — what happened after closing, with receipts, reporting, or attributed recollections where available.",
+             "", "## What to verify", "", rules.checks, "",
+             "Check the rules in effect at the time and label any current guidance separately. "
+             "Compare other jurisdictions only with their own authoritative sources.",
+             "", "## Verification starting points", ""]
     lines += [f"- <{url}>" for url in rules.references]
     lines += ["", "## Research leads", ""]
     cutoff = timestamp(now - timedelta(days=28))
     # Reserve space for each type of source, so a busy feed can't hide the others.
     for kind, maximum in (("Archive", 2), ("RSS", 4), ("YouTube", 3)):
-        rows = conn.execute("""SELECT source, title, url FROM leads
+        rows = conn.execute("""SELECT source, title, url, published FROM leads
             WHERE topic = ? AND kind = ? AND (kind <> 'YouTube' OR seen > ?)
             ORDER BY published DESC, seen DESC, url LIMIT ?""", (topic, kind, cutoff, maximum))
-        lines.extend(f"- {source}: {title} — <{url}>" for source, title, url in rows)
-    lines += ["", "## Story beats", "", "1. Open on the decision and what is at stake.",
-              "2. Show the deal terms, cash needed, and realistic alternatives.",
-              "3. Introduce one plausible setback and show how it changes the outcome.",
-              "4. Close with the verification checklist and distinguish assumptions from facts.", "",
-              "Use original characters, numbers, analysis, and visuals. Keep this example labeled fictional.",
-              "Treat linked stories as research leads. Review claims, attribution, and applicable disclosures before recording."]
+        for source, title, url, published in rows:
+            date = f" ({published[:10]})" if published else ""
+            lines.append(f"- {source}{date}: {title} — <{url}>")
+    lines += ["", "## Editorial gate", "",
+              "Attribute investor accounts and distinguish them from transaction records or official rules.",
+              "Mark missing facts as Not disclosed or Not independently verified. Hold the episode if a missing fact is central to the hook.",
+              "Keep the actual deal sequence and jurisdiction. Use original narration, analysis, and visuals. Label any reenactment or pseudonym.",
+              "Review each material claim and its source before recording."]
     return "\n".join(lines)
 
 

@@ -1,17 +1,28 @@
-# She Had $3,000 for a House. The Auction Was Selling Something Else.
+# Can You Really Buy a House for $3,000?
 
-**Fictional example for editorial review.** The character, parcel, and budget are invented. The auction format described is Jefferson County, Alabama.
+**Real deal breakdown — Detroit, Michigan, June 2021.** The case comes from investor Chase C. Hunter's interview with Realtor.com in August 2024. The reported prices and rehab costs are attributed to that interview. The current program comparisons below are separate from her transaction.
 
-| Scene | Faceless visual | Narration |
+| Stage | What the source establishes | What the source leaves open |
 |---|---|---|
-| The listing | Illustrated house, a fictional auction listing, and a $3,000 budget card | Maya had saved $3,000 for her first real estate deal. On an auction list, she saw a parcel with $2,400 next to it. Her first thought was that she could buy the house and still have $600 left. Then she read what the county was offering. |
-| The discovery | Two cards labeled House deed and Tax lien certificate | Jefferson County uses a tax lien auction. Under Alabama law, a purchaser at this kind of auction receives a tax lien certificate. The certificate represents the delinquent taxes and related charges listed on it. Maya could have put money into a claim tied to the property while still having no house to rent out. |
-| The decision | Two columns labeled Maya's goal and Auction result | She wanted a rental that could generate rent after closing and repairs. So she set the parcel aside. If she ever decided to invest in liens, she would first check redemption, the process for pursuing title, and what she could afford to have tied up. For now, her $3,000 stayed in the bank. |
-| The lesson | Freeze on the words What exactly is being sold? | The next time an auction price looks like the deal of the year, start with one question. What document will I actually receive if I win? Read the county's rules before building a budget around the answer. |
+| Finding the property | Hunter was living in Houston and searched online for affordable investment properties. That search led her to Detroit. | The interview mentions the Detroit Land Bank Authority as a source of inexpensive homes. It leaves the exact seller and acquisition program for these two deals unspecified. |
+| Price and financing | The two reported prices were $2,000 and $1,800. Hunter said she typically funds repairs with business credit cards. | Acquisition funding, cash due at closing, and how she funded the $1,800 property's specific renovation are undisclosed. |
+| Closing and control | Hunter said both purchases closed on the same day in June 2021. She reported rehabbing the $1,800 property and converting it to an office. | The deed type and transaction documents are unverified. |
+| What it cost | The article reports $130,000 of renovations on the $1,800 property, including the impact of water-line issues. The other property cost $2,000 to buy and $85,000 to renovate before it was ready for renters. | The source gives purchase and rehab figures. Closing costs, holding costs, financing charges, and profit remain undisclosed. |
 
-Show the fictional-example label at the opening. Use an illustrated mock listing and a generic parcel diagram. Put the county and statute links in the video description.
+## Faceless narration draft
 
-- [Jefferson County Tax Collector auction notice](https://www.jccal.org/660/Tax-Lien-Info)
+| Scene | Original visual | Narration |
+|---|---|---|
+| The hook | Price card showing $1,800. Reveal a second card for renovation after the opening question. | Can you really buy a house for $3,000? In Detroit, Chase Hunter says she bought one for $1,800. Then she ran into water-line problems. The rehab alone came to $130,000. |
+| The search | Illustrated Houston-to-Detroit map with a June 2021 timeline | Hunter was living in Houston when she started searching online for places she could afford to invest. That search led her to Detroit. She told Realtor.com she closed on two properties on the same day in June 2021, on her first visit to the city. |
+| The deal | Ledger with separate rows for the purchase, renovation, and undisclosed costs | The second property cost $1,800. The interview gives us the price, but it leaves the financing and cash due at closing open. Add the reported renovation and you get $131,800 in purchase and rehab alone. She turned that property into an office. The other property, the one she bought for $2,000, needed $85,000 of work to be ready for renters. |
+| The Alabama comparison | Two labeled cards showing Detroit Land Bank house auction and Jefferson County tax lien auction | If you're watching from Birmingham, start by checking what is actually for sale. Detroit's Land Bank describes a house auction with a rehab requirement. Jefferson County, Alabama, uses a tax lien auction, where the purchase gives the winning bidder a lien certificate. Birmingham has a separate Land Bank program with its own process for clearing title. Check the specific program before bidding. |
+| The takeaway | Freeze on a four-row ledger for purchase price, closing cash, rehab, and rights acquired | Hunter's story answers the headline question about purchase price. If you're evaluating a deal, write down the cash you need to close, what it costs to put the property to use, and what rights you get at closing. That's the number and the deal you can actually compare. |
+
+Use illustrative visuals and credit the interview in the description. Show the deal date when introducing Hunter. Show the jurisdiction on screen when switching to Alabama. Keep the financing and deed rows labeled as undisclosed or unverified.
+
+- [Chase C. Hunter's interview with Realtor.com](https://www.realtor.com/news/trends/detroit-bankruptcy-hot-market-for-real-estate-investors/)
+- [Detroit Land Bank Authority auction FAQ](https://buildingdetroit.org/faq)
+- [Jefferson County, Alabama, tax lien auction notice](https://www.jccal.org/660/Tax-Lien-Info)
 - [Alabama Code § 40-10-187, tax lien certificates](https://alison.legislature.state.al.us/code-of-alabama?section=40-10-187)
-- [Alabama Code § 40-10-193, redemption](https://alison.legislature.state.al.us/code-of-alabama?section=40-10-193)
-- [Alabama Code § 40-10-197, foreclosure of redemption rights and quiet title](https://alison.legislature.state.al.us/code-of-alabama?section=40-10-197)
+- [Birmingham Land Bank Clear Title Ownership Program](https://birminghamlandbank.org/clear-title-ownership-program/)
