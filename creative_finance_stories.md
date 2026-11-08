@@ -54,6 +54,41 @@ searches. The remaining three have RSS and curated references.
 6. Review the title and narration against the evidence. Label reenactments or
    pseudonyms and clear rights for any protected material you reuse.
 
+### Explain how a beginner would fund the deal
+
+Start with how the actual investor funded the deal. Then show other routes only
+where they fit the property, intended use, and local rules. Identify them as
+illustrative alternatives. A profitable forecast helps make the case to a
+funder. It still needs written terms, sufficient cash at each stage, and a
+credible repayment plan before the buyer commits.
+
+| Funding route | What the viewer needs to know |
+|---|---|
+| Hard money | Ask how much the lender advances at closing, what rehab qualifies, when draws are paid, and what must be advanced before reimbursement. Include points, interest, term, and the cost of a delayed exit. |
+| Community bank or credit union | Ask for an investment or rehab product that fits the use. Bring the purchase contract, contractor bids, local comps, a cash and reserve plan, and a repayment or exit plan. Ask about borrower qualifications, guarantees, and which assets would secure the loan. A pledged asset can be at risk if the loan defaults. |
+| Private investor or equity partner | One person may source and run the deal while the other contributes cash. Establish who puts in how much and when, who makes decisions, who funds overruns, and how capital, profits, or losses are allocated at exit. A private loan and an equity split have different obligations. |
+| Seller financing | The seller may accept a down payment and carry part of the price. Show the written terms, security, payment schedule, and how any balloon gets paid. |
+| Owner-occupant financing | FHA 203(k) can combine purchase and eligible rehab for qualified borrowers buying a primary residence. USDA Section 502 is a separate homeownership route with income and eligible-area rules. For a pure flip or rental, use a financing route that permits that purpose. |
+
+Show three separate numbers on screen. **Cash at closing**, **cash needed
+before rehab draws**, and **reserves through exit**. Show earnest money as a
+credit when applicable so it is counted once.
+
+**Illustration using the Madison price and rehab budget.** Suppose an investment
+lender advances 80% of the $155,000 purchase and reimburses up to $70,000 of
+approved rehab in draws. That would be $124,000 advanced toward the purchase,
+leaving a **$31,000 purchase contribution** before lender fees, closing costs,
+and prepaids. The buyer still needs money for any contractor bills due before a
+draw, plus carrying costs and a reserve. If the buyer cannot cover those amounts
+under the written terms, the deal needs another funding structure or a pass.
+The percentages are teaching assumptions. The reported Madison financing was
+a partnership.
+
+- [HUD FHA 203(k) program](https://www.hud.gov/program_offices/housing/sfh/203k/203k--df)
+- [USDA Section 502 guaranteed loan program](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program)
+- [OCC lending handbook](https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
+- [Example of a rehab lender's reimbursement process](https://fixatedfunding.com/fix-and-flip-loan-faq/)
+
 ### How to log gaps
 
 Create a row for every material fact. Record the reported value, source link and

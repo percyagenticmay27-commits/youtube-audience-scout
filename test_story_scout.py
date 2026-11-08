@@ -59,6 +59,13 @@ class StoryScoutTests(unittest.TestCase):
                     self.assertIn("Reproduction checklist", brief)
                     self.assertIn("Verify the jurisdiction in the script", brief)
                     self.assertIn("Keep the deal on HOLD", brief)
+                    self.assertIn("Where does the money come from?", brief)
+                    self.assertIn("Cash at closing", brief)
+                    self.assertIn("Cash before draws", brief)
+                    self.assertIn("Private investor or equity partner", brief)
+                    self.assertIn("FHA 203(k)", brief)
+                    self.assertIn("primary residence", brief)
+                    self.assertIn("Illustrative alternatives", brief)
 
     def test_youtube_keeps_query_provenance_and_uses_bounded_searches(self):
         row = {"id": {"videoId": "abcdefghijk"}, "snippet": {"title": "Case study", "publishedAt": "2026-11-04"}}

@@ -275,7 +275,23 @@ def brief(conn, topic, now):
         for source, title, url, published in rows:
             date = f" ({published[:10]})" if published else ""
             lines.append(f"- {source}{date}: {title} — <{url}>")
-    lines += ["", "## Reproduction checklist", "",
+    lines += ["", "## Where does the money come from?", "",
+              "- Show the actual financing first. Name who supplied the money, what secured it, how repayment worked, "
+              "and which costs, losses, or profits each party agreed to cover.",
+              "- Cash at closing. Itemize earnest money credited at closing, down payment, points, fees, and any prepaids.",
+              "- Cash before draws. Show who covers contractor deposits, repairs until reimbursement, and the reserve "
+              "for delays, overruns, or carrying costs. Explain how the loan or partner is paid back at the exit.",
+              "- Illustrative alternatives. Explain only routes that fit the intended use and local eligibility. "
+              "Separate them from how the investor actually funded the deal.",
+              "- Hard money. Check the purchase advance, eligible rehab, draw timing, points, interest, term, and payoff.",
+              "- Community bank or credit union. Show the deal plan, bids, comparable sales or rents, repayment plan, "
+              "and required cash, collateral, and guarantees.",
+              "- Private investor or equity partner. Explain who brings the deal and runs it, who puts in cash, "
+              "and how control, overruns, losses, and proceeds are handled in writing.",
+              "- Seller financing. Check the down payment, payment schedule, security, and any balloon payoff.",
+              "- Owner-occupant financing. FHA 203(k) may combine purchase and eligible rehab for a qualifying primary residence. "
+              "Check program rules before suggesting it and use investment financing for a pure flip or rental.",
+              "", "## Reproduction checklist", "",
               "Write the steps in plain language. List what to find, cash and documents needed, who does each step, "
               "what happens at closing, and how the investor reaches the intended outcome.",
               "Verify the jurisdiction in the script, including the relevant city, county, and state. "
